@@ -2,6 +2,7 @@ import tensorflow as tf
 import spacy
 import PyPDF2
 import os
+import tensorflow_text as text
 
 import pdfkit
 
@@ -17,7 +18,7 @@ CONCLUSIONS = []
 output=''
 file_path=''
 
-model = tf.keras.models.load_model("skimlit_model_5")
+model = tf.keras.models.load_model("skimlit_model_5_with_bert")
 
 nlp = spacy.load("en_core_web_sm")
 
